@@ -1,0 +1,43 @@
+
+.btn{
+    background: $danger;
+	font-size: 16px;
+    line-height: 1.5;
+	color: #fff;
+    display: inline-block;
+    min-width: 160px;
+
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+    clip-path: polygon(0 0, 93% 4%, 100% 100%, 0% 100%);
+    &.btn_at_left{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 7% 100%);
+    }
+    // transform:skewX(20deg);
+    // &:before{
+    //     content: "";
+    //     width: 50%;
+    //     height: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     right: -10px;
+    //     transform:skewX(20deg);
+    //     z-index: -1;
+    //     background: $danger;
+    //     background: #000;
+    // }
+    &:hover{
+        text-decoration: none;
+        color: #fff;
+    }
+}
