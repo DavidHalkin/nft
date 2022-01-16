@@ -1,0 +1,19 @@
+$(document).ready(function(){
+    $('.owl_carousel_js').owlCarousel({
+        margin:30,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:4,
+                nav:false
+            }
+        }
+    });
+    $(".faq_item_js").click(function(){
+        $(this).find(".switcher").toggleClass("opened").parents(".faq_item").find(".faq_item_content").slideToggle("fast");
+    });
+});

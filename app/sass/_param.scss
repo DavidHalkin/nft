@@ -1,12 +1,27 @@
 body{
 	font-family: 'Quicksand', sans-serif;
-	color: #8c8c8c;
-	background: #fff;
+	color: #fff;
+	background: #000;
+	font-size: 20px;
+	line-height: 1.6;
+	overflow-x: hidden;
+}
+a{
+	color: #fff;
+	&:hover{
+		color: #fff;
+	}
 }
 .centered{
-	max-width: 1140px;
-	padding-left: 15px;
-	padding-right: 15px;
+	max-width: 1150px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-left: auto;
 	margin-right: auto;
+}
+.bg-danger{
+	background: $danger;
+}
+.bg-secondary{
+	background: $secondary;
 }

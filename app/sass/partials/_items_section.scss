@@ -1,0 +1,27 @@
+.items_section_one{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	@include media("max", "md") {
+		justify-content:center;
+	}
+}
+.col_txt{
+	max-width: 53%;
+	flex:0 0 53%;
+	padding-right: 15px;
+	padding-left: 15px;
+	@include media("max", "md") {
+		max-width: 100%;
+		flex:0 0 100%;
+	}
+}
+.col_img{
+	max-width: 44%;
+	flex:0 0 44%;
+	padding-left: 20px;
+	@include media("max", "md") {
+		flex: 0 0 auto;
+		width: auto;
+		max-width: 100%;
+	}
+}

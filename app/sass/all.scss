@@ -1,11 +1,25 @@
 $danger:#de0399;
+$secondary:#3d5770;
+:root {
+  --pos: center center;
+  --pos-header-nav: 50% 0;
+  --size: 0;
+}
 @import
 '_reboot',
 '_mixins',
 '_grid',
 '_param',
-'partials/_webfont',
-'partials/_typography',
+'partials/ui/_webfont',
+'partials/ui/_typography',
 'partials/_imgs',
-'partials/_btn';
+'partials/ui/_btn',
+'partials/_header',
+'partials/_article_box',
+'partials/_items_section',
+'partials/_road_map_section',
+'partials/_faq_section',
+'partials/_our_team_section',
+'partials/_anim_elements',
+'partials/_footer';
 

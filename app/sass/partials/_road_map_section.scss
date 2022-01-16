@@ -1,0 +1,49 @@
+.road_map_section{
+	padding-top: 100px;
+}
+.road_list{
+	padding-left: 60px;
+	padding-right: 60px;
+}
+.road_item{
+	overflow: hidden;
+}
+.road_item_wrapper{
+	max-width: 52%;
+	flex:0 0 52%;
+	position: relative;
+}
+.road_item_content{
+	padding: 36px 30px 50px 50px;
+	clip-path: polygon(15px 0, 100% 0, 100% 100%, 0 100%);
+	h3{
+		font-size: 36px;
+		line-height: 39px;
+	}
+	p{
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 0;
+	}
+}
+.road_item{
+	display: flex;
+	padding-bottom: 80px;
+	&:nth-of-type(even){
+		justify-content:flex-end;
+		.road_item_content {
+			clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 100%, 0 100%);
+		}
+		.anim_elements{
+			left: auto;
+			right: 100%;
+		}
+		
+	}
+	&:last-of-type{
+		padding-bottom: 0;
+		.anim_elements{
+			display: none !important;
+		}
+	}
+}

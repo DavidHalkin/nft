@@ -1,0 +1,38 @@
+.footer{
+	background: $secondary;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	.copy{
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: bold;
+	}
+	.soc_list{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		li{
+			margin-left: 40px;
+			svg{
+				width: 16px;
+				display: block;
+				&.inst_ico{
+					width: 23px;
+				}
+				&.ico_f{
+					width: 15px;
+				}
+				&.ico_discord{
+					width: 32px;
+				}
+			}
+			a{
+				transition: all 0.3s ease;
+				&:hover{
+					color: $danger;
+				}
+			}
+		}
+	}
+
+}

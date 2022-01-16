@@ -1,0 +1,28 @@
+.article_box{
+	padding-top: 121px;
+	padding-bottom: 150px;
+	.centered{
+		position: relative;
+	}
+	.btn_line{
+		padding-top: 13px;
+	}
+	.article_box_txt{
+		max-width: 65%;
+		flex:0 0 65%;
+		position: relative;
+		z-index: 1;
+		@include media("max", "xl") {
+			background: red;
+		}
+	}
+	.article_box_img{
+		position: absolute;
+		pointer-events: none;
+		top: 50%;
+		right: -7%;
+		transform:translateY(-50%);
+		// background: green;
+		width: 54%;
+	}
+}

@@ -1,5 +1,5 @@
 
-$sizes: ("xs":320px, "sm":576px, "md":768px, "lg":992px, "xl":1200px);
+$sizes: ("xs":320px, "sm":576px, "md":768px, "lg":992px, "xl":1150px);
 
 @function getPreviousSize($currentSize) {
   $keys: map-keys($sizes);

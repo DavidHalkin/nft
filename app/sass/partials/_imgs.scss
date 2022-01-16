@@ -1,8 +1,14 @@
 .item{
-	width: 300px;
 	position: relative;
-	img{
+	display: inline-block;
+	img:not(.capsule){
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+	}
+	.capsule_holder{
+		position: absolute;
+		bottom: -76px;
+		right: -30px;
+		width: 41%;
 	}
 	&:after{
 		content: "";
@@ -17,7 +23,7 @@
 	}
 }
 .img-fluid{
-	display: block;
+	display: inline-block;
 	max-width: 100%;
 	height: auto;
 }

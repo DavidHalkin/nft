@@ -1,0 +1,31 @@
+.text-danger{
+	color: $danger;
+}
+.text-center{
+	text-align: center;
+}
+.text-uppercase{
+	text-transform: uppercase;
+}
+.text-right{
+	text-align: right;
+}
+h1,h2,h3{
+	font-family: 'LT Energy VF';
+}
+h1{
+	font-size: 72px;
+	line-height: 80px;
+}
+h2{
+	font-size: 52px;
+	line-height: 58px;
+	margin-bottom: 15px;
+}
+h3{
+	font-size: 22px;
+	line-height: 28px;
+}
+p{
+	margin-bottom:23px;
+}
