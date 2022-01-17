@@ -45,8 +45,22 @@
     &.at_left{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 7% 100%);
         padding: 14px 15px 14px 30px;
+        @include media("max", "md") {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            min-width: 150px;
+        }
     }
     svg{
         width: 32px;
+    }
+    @include media("max", "md") {
+        font-size: 12px;
+        min-width: 150px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        svg{
+            width: 20px;
+        }
     }
 }

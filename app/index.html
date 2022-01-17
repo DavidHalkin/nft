@@ -13,22 +13,27 @@
 			<div class="header">
 				<div class="centered d-flex flex-wrap">
 					<strong class="logo mr-auto"><a href="#"><img src="images/logo.png" alt="" class="img-fluid"></a></strong>
-					<ul class="h_nav d-flex align-items-center flex-wrap">
-						<li><a href="#about_us"><span>About Us</span></a></li>
-						<li><a href="#artist"><span>Artist</span></a></li>
-						<li><a href="#faq"><span>Faq</span></a></li>
-						<li><a href="#road_map"><span>Roadmap</span></a></li>
-					</ul>
+					<div class="nav_holder nav_holder_js">
+						<div class="nav_wrap">
+							<ul class="h_nav d-flex align-items-center flex-wrap">
+								<li><a href="#about_us"><span>About Us</span></a></li>
+								<li><a href="#artist"><span>Artist</span></a></li>
+								<li><a href="#faq"><span>Faq</span></a></li>
+								<li><a href="#road_map"><span>Roadmap</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu_mob menu_mob_js"><em></em></div>
 				</div>
 			</div>
 			<div class="main">
 				<div class="article_box">
-					<div class="centered d-flex align-items-center">
+					<div class="centered d-flex flex-wrap align-items-center">
 						<div class="article_box_txt">
 							<h1>Get Ready To <br>Buy Extraordinary NFTs</h1>
 							<p class="pr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra lectus lorem. Nunc pharetra scelerisque nulla quis hendrerit.</p>
 							<div class="btn_line">
-								<a href="#" class="btn mr-30"><span>Expolre</span></a>
+								<a href="#" class="btn mr-md-30"><span>Expolre</span></a>
 								<a href="#" class="btn at_left"><span>Create</span></a> 
 							</div>
 						</div>
@@ -79,23 +84,39 @@
 						</div>
 						<div class="owl_section">
 							<div class="owl-carousel owl-theme owl_carousel_js">
-								<div class="owl_item">
-									<div class="img_photo bg-danger p-3">
-										asas
+								<a class="owl_item" href="#"  data-fancybox="" data-src="#dialog_content_1">
+									<div class="img_h">
+										<img src="images/photo.png" alt="">
 									</div>
 									<h3 class="text-uppercase">Kurtis Dawe</h3>
-								</div>
-								<div class="owl_item">
-									<div class="img_photo bg-danger p-3">
-										asas
+									<p class="text-truncate">Lorem ipsum dolor sit amet consectetur </p>
+								</a>
+								<a class="owl_item" href="#"  data-fancybox="" data-src="#dialog_content_2">
+									<div class="img_h">
+										<img src="images/photo.png" alt="">
 									</div>
 									<h3 class="text-uppercase">Kurtis Dawe</h3>
-								</div>
+									<p class="text-truncate">Lorem ipsum dolor sit amet consectetur </p>
+								</a>
+								<a class="owl_item" href="#"  data-fancybox="" data-src="#dialog_content_3">
+									<div class="img_h">
+										<img src="images/photo.png" alt="">
+									</div>
+									<h3 class="text-uppercase">Kurtis Dawe</h3>
+									<p class="text-truncate">Lorem ipsum dolor sit amet consectetur </p>
+								</a>
+								<a class="owl_item" href="#"  data-fancybox="" data-src="#dialog_content_4">
+									<div class="img_h">
+										<img src="https://picsum.photos/244/259" alt="">
+									</div>
+									<h3 class="text-uppercase">Kurtis Dawe</h3>
+									<p class="text-truncate">Lorem ipsum dolor sit amet consectetur </p>
+								</a>
 							</div>
 						</div>
 					</div>	
 				</div>
-				<div class="items_section pt-70">
+				<div class="items_section pt-0 pt-md-70">
 					<div class="centered">
 						<div class="items_section_one d-flex flex-wrap align-items-center justify-content-between">
 							<div class="col_txt order-first order-md-last">
@@ -103,7 +124,7 @@
 								<h3 class="text-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra lectus lorem. Nunc pharetra scelerisque nulla quis hendrerit. Curabitur maximus turpis id dolor consectetur, eget scelerisque arcu ullamcorper. Curabitur ac dolor a magna finibus sagittis. Nulla a elit vitae magna lacinia ornare. Donec ultricies, lorem in lacinia ullamcorper, dolor leo iaculis ligula, a hendrerit tortor dolor vitae justo. Nulla eleifend felis non accumsan congue. </p>
 							</div>
-							<div class="col_img text-right">
+							<div class="col_img text-right story_block">
 								<img src="images/capsule_big.png" alt="" class="img-fluid">
 							</div>
 						</div>
@@ -111,8 +132,8 @@
 				</div>
 				<div class="road_map_section" id="road_map">
 					<div class="centered">
-						<div class="text-center pb-55">
-							<h2 class="pb-4">ROADMAP</h2>
+						<div class="text-center pb-30 pb-md-55">
+							<h2 class="pb-0 pb-md-4">ROADMAP</h2>
 							<a href="#" class="btn px-40"><span>Launch Roadmap</span></a>
 						</div>
 						<div class="road_list">
@@ -160,7 +181,7 @@
 				</div>
 				<div class="faq_section" id="faq">
 					<div class="centered">
-						<h2 class="text-uppercase text-center pb-4">Frequently asked questions</h2>
+						<h2 class="text-uppercase text-center pb-0 pb-md-4">Frequently asked questions</h2>
 						<div class="faq_list">
 							<div class="faq_item">
 								<div class="faq_item_header d-flex align-items-center bg-danger faq_item_js">
@@ -186,7 +207,7 @@
 				</div>
 			</div>
 			<div class="footer">
-				<div class="centered d-flex align-items-center justify-content-between">
+				<div class="centered d-flex align-items-center flex-wrap justify-content-center justify-content-md-between">
 					<span class="copy">©copyright-2022. All Rights Reserved</span>
 					<ul class="soc_list d-flex align-items-center">
 						<li>
@@ -205,6 +226,61 @@
 							</a>
 						</li>
 					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="dialog_content_1" style="display:none;max-width:580px;" class="dialog_modal">
+			<div class="light_bx_holder">
+				<div class="light_bx_content">
+					<div class="text-center">
+						<div class="item mb-5">
+							<img src="https://picsum.photos/475/570" alt="" class="img-fluid">
+						</div>
+					</div>
+					<h3>Kurtis Dawe 1</h3>
+					<p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Sint minima non numquam, aspernatur doloremque impedit nobis, eveniet commodi eaque quibusdam similique suscipit natus quis ex nam, dignissimos itaque cumque ipsam.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci at earum praesentium reprehenderit quisquam dolor ut in ipsum incidunt, nisi maxime eius quod sint, fuga iusto omnis ipsam. Architecto!</p>
+				</div>
+			</div>
+		</div>
+		<div id="dialog_content_2" style="display:none;max-width:580px;" class="dialog_modal">
+			<div class="light_bx_holder">
+				<div class="light_bx_content">
+					<div class="text-center">
+						<div class="item mb-5">
+							<img src="https://picsum.photos/475/570" alt="" class="img-fluid">
+						</div>
+					</div>
+					<h3>Kurtis Dawe 2</h3>
+					<p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Sint minima non numquam, aspernatur doloremque impedit nobis, eveniet commodi eaque quibusdam similique suscipit natus quis ex nam, dignissimos itaque cumque ipsam.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci at earum praesentium reprehenderit quisquam dolor ut in ipsum incidunt, nisi maxime eius quod sint, fuga iusto omnis ipsam. Architecto!</p>
+				</div>
+			</div>
+		</div>
+		<div id="dialog_content_3" style="display:none;max-width:580px;" class="dialog_modal">
+			<div class="light_bx_holder">
+				<div class="light_bx_content">
+					<div class="text-center">
+						<div class="item mb-5">
+							<img src="https://picsum.photos/475/570" alt="" class="img-fluid">
+						</div>
+					</div>
+					<h3>Kurtis Dawe 3</h3>
+					<p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Sint minima non numquam, aspernatur doloremque impedit nobis, eveniet commodi eaque quibusdam similique suscipit natus quis ex nam, dignissimos itaque cumque ipsam.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci at earum praesentium reprehenderit quisquam dolor ut in ipsum incidunt, nisi maxime eius quod sint, fuga iusto omnis ipsam. Architecto!</p>
+				</div>
+			</div>
+		</div>
+		<div id="dialog_content_4" style="display:none;max-width:580px;" class="dialog_modal">
+			<div class="light_bx_holder">
+				<div class="light_bx_content">
+					<div class="text-center">
+						<div class="item mb-5">
+							<img src="https://picsum.photos/475/570" alt="" class="img-fluid">
+						</div>
+					</div>
+					<h3>Kurtis Dawe 4</h3>
+					<p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Sint minima non numquam, aspernatur doloremque impedit nobis, eveniet commodi eaque quibusdam similique suscipit natus quis ex nam, dignissimos itaque cumque ipsam.</p>
 				</div>
 			</div>
 		</div>

@@ -3,6 +3,8 @@
 	padding-bottom: 50px;
 	@include media("max", "md") {
 		justify-content:center;
+		padding-top: 25px;
+		padding-bottom: 25px;
 	}
 }
 .col_txt{
@@ -13,6 +15,8 @@
 	@include media("max", "md") {
 		max-width: 100%;
 		flex:0 0 100%;
+		padding-top: 30px;
+		padding-bottom: 20px;
 	}
 }
 .col_img{
@@ -23,5 +27,19 @@
 		flex: 0 0 auto;
 		width: auto;
 		max-width: 100%;
+		@include media("max", "md") {
+			padding-left: 0;
+			.item {
+				max-width: 300px;
+			}
+		}
+	}
+}
+.story_block{
+	@include media("max", "md") {
+		text-align: center;
+		img{
+			max-width: 80%;
+		}
 	}
 }

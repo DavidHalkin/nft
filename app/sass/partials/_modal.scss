@@ -1,0 +1,20 @@
+.dialog_modal{
+	// background: $secondary;
+	background: #000;
+	width: 100%;
+	.item{
+		max-width: 250px;
+		margin: 0 auto;
+	}
+}
+.fancybox-content{
+	@include media("max", "lg") {
+		padding: 15px 20px;
+	}
+}
+.fancybox-button{
+	background: $danger;
+	opacity: 1;
+	// clip-path: polygon(0 0, 50% 0, 100% 100%, 10% 100%);
+	// clip-path: polygon(0px 0px, 50% 0px, 100% 10px, 100% 100%, 31.82% 97.73%, -4px 68.18%);
+}

@@ -1,17 +1,26 @@
 .road_map_section{
 	padding-top: 100px;
+	@include media("max", "md")  {
+		padding-top: 30px;
+	}
 }
 .road_list{
 	padding-left: 60px;
 	padding-right: 60px;
-}
-.road_item{
-	overflow: hidden;
+	counter-reset: my-awesome-counter;
+	@include media("max", "md") {
+		padding-right: 0;
+		padding-left: 0;
+	}
 }
 .road_item_wrapper{
 	max-width: 52%;
 	flex:0 0 52%;
 	position: relative;
+	@include media("max", "md") {
+		max-width: 90%;
+		flex:0 0 90%;
+	}
 }
 .road_item_content{
 	padding: 36px 30px 50px 50px;
@@ -19,31 +28,76 @@
 	h3{
 		font-size: 36px;
 		line-height: 39px;
+		position: relative;
+		&:before{
+			content: counter(my-awesome-counter);
+			position: absolute;
+			top: 0;
+			left: -25px;
+			@include media("max", "md") {
+				left: -12px;
+			}
+		}
 	}
 	p{
 		font-size: 18px;
 		line-height: 30px;
 		margin-bottom: 0;
 	}
+	@include media("max", "lg")  {
+		h3{
+			font-size: 30px;
+			line-height: 35px;
+		}
+		p{
+			font-size: 15px;
+			line-height: 20px;
+		}
+	}
+	@include media("max", "md") {
+		h3{
+			font-size: 16px;
+			line-height: 20px;
+		}
+		p{
+			font-size: 12px;
+			line-height: 16px;
+		}
+		padding:20px 30px;
+	}
 }
 .road_item{
 	display: flex;
 	padding-bottom: 80px;
+	overflow: hidden;
+	counter-increment: my-awesome-counter;
 	&:nth-of-type(even){
 		justify-content:flex-end;
-		.road_item_content {
-			clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 100%, 0 100%);
+		@include media("min", "md") {
+			.road_item_content {
+				clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 100%, 0 100%);
+			}
 		}
 		.anim_elements{
 			left: auto;
 			right: 100%;
 		}
-		
+	}
+	@include media("max", "md") {
+		justify-content:flex-end;
+		padding-bottom: 30px;
+		overflow: visible;
 	}
 	&:last-of-type{
 		padding-bottom: 0;
 		.anim_elements{
-			display: none !important;
+			display: none;
+			@include media("max", "md") {
+				display: block;
+				.vertical{
+					display: none;
+				}
+			}
 		}
 	}
 }

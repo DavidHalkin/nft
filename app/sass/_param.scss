@@ -5,6 +5,27 @@ body{
 	font-size: 20px;
 	line-height: 1.6;
 	overflow-x: hidden;
+	background: url(../images/bg.jpg) repeat-y 50% 0;
+	background-size: cover;
+	@include media("max", "md") {
+		background-size: auto;
+	}
+
+}
+html{
+	scrollbar-color: $danger #000;
+	scrollbar-width: thin;
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-track {
+	background-color: #000;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $danger;
+	}
 }
 a{
 	color: #fff;
@@ -24,4 +45,7 @@ a{
 }
 .bg-secondary{
 	background: $secondary;
+}
+.compensate-for-scrollbar{
+	// margin-right: 10px !important;
 }

@@ -34,5 +34,21 @@
 			}
 		}
 	}
-
+	@include media("max", "md") {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		.copy{
+			max-width: 100%;
+			flex:0 0 100%;
+			text-align: center;
+			padding-bottom: 15px;
+			font-size: 14px;
+			line-height: 16px;
+		}
+		.soc_list {
+			li{
+				margin: 0 14px !important;
+			}
+		}
+	}
 }

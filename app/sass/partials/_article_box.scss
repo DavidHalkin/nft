@@ -1,6 +1,10 @@
 .article_box{
 	padding-top: 121px;
 	padding-bottom: 150px;
+	@include media("max", "md") {
+		padding-bottom: 0;
+		padding-top: 30px;
+	}
 	.centered{
 		position: relative;
 	}
@@ -12,8 +16,13 @@
 		flex:0 0 65%;
 		position: relative;
 		z-index: 1;
-		@include media("max", "xl") {
-			background: red;
+		@include media("max", "md") {
+			max-width: 100%;
+			flex:0 0 100%;
+			p{
+				padding-right: 0;
+				margin-bottom: 0;
+			}
 		}
 	}
 	.article_box_img{
@@ -24,5 +33,11 @@
 		transform:translateY(-50%);
 		// background: green;
 		width: 54%;
+		@include media("max", "md") {
+			position: static;
+			transform:none;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 }

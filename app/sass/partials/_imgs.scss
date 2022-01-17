@@ -20,6 +20,22 @@
 		left: -20px;
 		z-index: -1;
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+		@include media("max", "md") {
+			top: 10px;
+			left: -10px;
+		}
+	}
+
+	.dialog_modal &{
+		&:after{
+			z-index: 1;
+			top: 10px;
+			left: -10px;
+		}
+		img{
+			position: relative;
+			z-index: 2;
+		}
 	}
 }
 .img-fluid{

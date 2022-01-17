@@ -25,7 +25,11 @@
 .d-inline-block{
 	display: inline-block;
 }
-
+.justify-content-md-between{
+	@include media("min", "md") {
+		justify-content:space-between;
+	}
+}
 [class *= "col-"],.col{
 	position: relative;
 	width: 100%;
@@ -41,8 +45,19 @@
 .mb-0{
 	margin-bottom: 0 !important;
 }
+.mb-4{
+	margin-bottom: 24px;
+}
+.mb-5{
+	margin-bottom: 48px !important;
+}
 .mr-30{
 	margin-right: 30px !important;
+}
+.mr-md-30{
+	@include media("min", "md") {
+		margin-right: 30px;
+	}
 }
 .px-2{
 	padding-left: 8px;
@@ -81,6 +96,29 @@
 }
 .pt-70{
 	padding-top: 70px;
+}
+.pb-30{
+	padding-bottom: 30px;
+}
+.pb-md-55{
+	@include media("min", "md") {
+		padding-bottom: 55px;
+	}
+}
+.pt-md-70{
+	@include media("min", "md")  {
+		padding-top: 70px;
+	}
+}
+.pb-lg-4{
+	@include media("min", "lg") {
+		padding-bottom: 24px;
+	}
+}
+.pb-md-4{
+	@include media("min", "md") {
+		padding-bottom: 24px;
+	}
 }
 .px-40{
 	padding-left: 40px !important;

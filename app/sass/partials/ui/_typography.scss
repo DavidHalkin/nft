@@ -16,16 +16,45 @@ h1,h2,h3{
 h1{
 	font-size: 72px;
 	line-height: 80px;
+	@include media("max", "lg") {
+		font-size: 50px;
+		line-height: 58px;
+	}
+	@include media("max", "md") {
+		font-size: 28px;
+		line-height: 35px;
+	}
 }
 h2{
 	font-size: 52px;
 	line-height: 58px;
 	margin-bottom: 15px;
+	@include media("max", "lg") {
+		font-size: 40px;
+		line-height: 46px;
+	}
+	@include media("max", "md") {
+		font-size: 25px;
+		line-height: 35px;
+	}
 }
 h3{
 	font-size: 22px;
 	line-height: 28px;
+	@include media("max", "md") {
+		font-size: 18px;
+		line-height: 25px;
+	}
 }
 p{
 	margin-bottom:23px;
+	@include media("max", "md") {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+.text-truncate{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }

@@ -1,6 +1,13 @@
 .header{
 	padding-top: 70px;
 	padding-bottom: 20px;
+	@include media("max", "md") {
+		padding-top: 30px;
+		.logo{
+			max-width: 150px;
+			flex:0 0 150px;
+		}
+	}
 	.h_nav{
 		margin: 0;
 		padding: 0;
@@ -16,26 +23,109 @@
 					position: relative;
 					z-index: 1;
 				}
-				// &:before{
-			 //        content: "";
-			 //        position: absolute;
-			 //        left: 0;
-			 //        top: 0;
-			 //        width: 100%;
-			 //        height: 100%;
-			 //        background-color: #fff;
-			 //        clip-path: circle(var(--size) at var(--pos-header-nav));
-			 //        transition:clip-path 0.3s linear;
-			 //        z-index: -1;
-			 //    }
-			 //    &:hover{
-			 //        text-decoration: none;
-			 //        color: $danger;
-			 //        &:before{
-			 //            --size: 150%;
-			 //        }
-			 //    }
 			}
+		}
+	}
+}
+.menu_mob{
+	width: 40px;
+	height: 31px;
+	position: relative;
+	// background: rgba(0,0,0,.5);
+	border-radius: 3px;
+	text-indent: -9999px;
+	overflow: hidden;
+	cursor: pointer;
+	display: none;
+	@include media("max", "md") {
+		display: block;
+	}
+	em{
+		font-size: 0;
+		line-height: 0;
+		text-indent: -99999px;
+		content: none;
+	}
+	&:after,&:before,em{
+		background: #fff;
+		border-radius: 4px;
+		position: absolute;
+		top: 16px;
+		left: 25%;
+		right: 25%;
+		height: 3px;
+		margin-top: -2px;
+		transition: all .2s linear;
+		content:"";
+	}
+	&:after{
+		top: 22px;
+	}
+	&:before{
+		top: 10px;
+	}
+	&.opened{
+		em{
+			opacity: 0;
+		}
+		&:before,&:after{
+			transform: rotate(45deg);
+			top: 16px;
+			left: 15%;
+			right: 15%;
+		}
+		&:after{
+			transform: rotate(-45deg);
+		}
+	}
+}
+.nav_holder{
+	@include media("max", "md") {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 30;
+		margin: 0;
+		background: #000;
+		display: flex;
+		align-items:center;
+		flex-direction: column;
+		justify-content:center;
+		max-height: 100vh;
+		height: 100%;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.3s ease;
+		&.opened{
+			opacity: 1;
+			visibility: visible;
+		}
+		.nav_wrap{
+			padding: 20px;
+			overflow: auto;
+			width: 100%;
+		}
+		.h_nav{
+			display: block !important;
+			text-align: center;
+			li{
+				padding: 10px 0;
+				a{
+					font-size: 25px;
+				}
+			}
+		}
+	}
+}
+body.menu_opened{
+	@include media("max", "md") {
+		overflow: hidden;
+		.menu_mob{
+			position: fixed !important;
+			top: 20px;
+			right: 20px;
+			z-index: 100;
 		}
 	}
 }
