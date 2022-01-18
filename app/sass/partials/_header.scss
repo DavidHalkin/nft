@@ -19,9 +19,14 @@
 				display: block;
 				padding: 5px;
 				position: relative;
+				transition: color 0.3s ease;
 				span{
 					position: relative;
 					z-index: 1;
+				}
+				&:hover{
+					color: $danger;
+					text-decoration: none;
 				}
 			}
 		}

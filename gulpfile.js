@@ -106,6 +106,7 @@ gulp.task('scripts', function() {
 		// 'bower_components/jcf/dist/js/jcf.scrollable.js',
 		// 'bower_components/ion-rangeslider/js/ion.rangeSlider.min.js',
 		'bower_components/fancybox/dist/jquery.fancybox.min.js',
+		'bower_components/wow/dist/wow.min.js',
 		
 		])
 		// .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
@@ -125,6 +126,7 @@ gulp.task('css-libs', ['sass'], function() {
 		// 'bower_components/datatables.net-dt/css/jquery.dataTables.min.css',
 		// 'bower_components/bootstrap-select/dist/css/bootstrap-select.min.css',
 		'bower_components/fancybox/dist/jquery.fancybox.min.css',
+		'bower_components/wow/css/libs/animate.css',
 		])
 		.pipe(sourcemaps.init())
 		.pipe(cssnano())
