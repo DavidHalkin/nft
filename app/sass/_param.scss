@@ -26,6 +26,7 @@ html{
 	&::-webkit-scrollbar-thumb {
 		background: $danger;
 	}
+	scroll-behavior: smooth;
 }
 a{
 	color: #fff;

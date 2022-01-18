@@ -192,7 +192,7 @@ body { font-family: 'Quicksand', sans-serif; color: #fff; background: #000; font
 
 @media only screen and (max-width: 768px) { body { -webkit-background-size: auto auto; background-size: auto; } }
 
-html { scrollbar-color: #de0399 #000; scrollbar-width: thin; }
+html { scrollbar-color: #de0399 #000; scrollbar-width: thin; scroll-behavior: smooth; }
 
 html::-webkit-scrollbar { width: 10px; }
 
@@ -485,6 +485,20 @@ p { margin-bottom: 23px; }
 
 @media only screen and (max-width: 768px) { .anim_elements { width: 30px; left: auto; right: 100%; top: 15px; height: calc(100% + 30px); } }
 
+.anim_elements.wow .horizontal { width: 0; }
+
+.anim_elements.wow .vertical { height: 0; }
+
+.anim_elements.wow .dot { width: 0; height: 0; }
+
+.anim_elements.wow.animated .horizontal { width: 100%; -webkit-transition: width 0.5s ease; -o-transition: width 0.5s ease; transition: width 0.5s ease; -webkit-transition-delay: 1s; -o-transition-delay: 1s; transition-delay: 1s; }
+
+.anim_elements.wow.animated .vertical { height: 100%; -webkit-transition: height 0.5s ease; -o-transition: height 0.5s ease; transition: height 0.5s ease; -webkit-transition-delay: 1.5s; -o-transition-delay: 1.5s; transition-delay: 1.5s; }
+
+.anim_elements.wow.animated .dot { width: 44px; height: 44px; -webkit-transition: all 0.1s ease; -o-transition: all 0.1s ease; transition: all 0.1s ease; -webkit-transition-delay: 2s; -o-transition-delay: 2s; transition-delay: 2s; }
+
+@media only screen and (max-width: 768px) { .anim_elements.wow.animated .dot { width: 28px; height: 28px; padding: 6px; -webkit-transform: translateX(-50%) !important; -ms-transform: translateX(-50%) !important; transform: translateX(-50%) !important; left: 50%; } }
+
 .horizontal { height: 1px; width: 100%; background: #de0399; position: absolute; top: 0; left: 0; }
 
 @media only screen and (max-width: 768px) { .horizontal { display: none !important; } }
@@ -494,8 +508,6 @@ p { margin-bottom: 23px; }
 @media only screen and (max-width: 768px) { .vertical { right: auto; left: 50%; } }
 
 .dot { width: 44px; height: 44px; -webkit-border-radius: 50%; border-radius: 50%; position: absolute; top: 0; left: 100%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); padding: 12px; }
-
-@media only screen and (max-width: 768px) { .dot { width: 28px; height: 28px; padding: 6px; -webkit-transform: translateX(-50%) !important; -ms-transform: translateX(-50%) !important; transform: translateX(-50%) !important; left: 50%; } }
 
 .dot em { display: block; height: 100%; width: 100%; -webkit-border-radius: 50%; border-radius: 50%; }
 
